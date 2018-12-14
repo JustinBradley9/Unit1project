@@ -18,24 +18,19 @@ function basic2() {
     alert( x + " ! Make The first move")
 }
 
-var Quest = new Array(10);  //this sets up an array for all of the answers that are given
-// var rip = () =>{
-//     document.getElementById("demon").style.marginLeft = "0px";
-// }
-
+var Quest = new Array(2);  //this sets up an array for all of the answers that are given
 
 var getstartedfred =() => {
-// alert("function getstartedfred started");
 // this function gives each of the answers 0 points so if someone doesn't answer a question
 // the whole thing will continue to work
-  for(var i=0; i<10; i++) { Quest[i]=0; }
+  for(var i=0; i<1; i++) { Quest[i]=0; }
 }
 
 var total =() => {
 // alert("function total started");
 // this function adds the number of points each answer is worth together
   score=0;
-  for (var i=0; i<10; i++) { score=score+Quest[i]; }
+  for (var i=0; i<1; i++) { score=score+Quest[i]; }
   analyzer(score);
 }
 housename = new Array();{
@@ -90,6 +85,6 @@ var  myDisplay = (housename) => {
 
 var saver =(q, points) => {
 // this function puts the points that each answer is worth into the array
-  q=q-1;
+  q=q-q;
   Quest[q]=points
 }
