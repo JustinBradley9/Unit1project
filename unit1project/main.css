@@ -57,35 +57,35 @@ li{
     border: dotted;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #category2area{
     grid-area: category2space;
     border: dotted;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #category3area{
     grid-area: category3space;
     border: dotted;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #category4area{
     grid-area: category4space;
     border: dotted;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #category5area{
     grid-area: category5space;
     border: dotted;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .pointsbox{
     font-size: 20px;
@@ -93,6 +93,7 @@ li{
     width: 10vw;
     margin-left: 2vw;
     border-radius: 20%;
+    margin-top: -5vh;
 }
 
 .pointsbox1{
@@ -101,6 +102,7 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 border: solid;
+position: absolute;
 }
 .pointsbox2{
     background-image: url(images/randomlogo.png);
@@ -108,6 +110,7 @@ border: solid;
     background-repeat: no-repeat;
     background-position: center;
     border: solid;
+    position: absolute;
 }
 .pointsbox3{
     background-image: url(images/fairylogo.jpg);
@@ -115,6 +118,7 @@ border: solid;
     background-repeat: no-repeat;
     background-position: center;
     border: solid;
+    position: absolute;
 }
 .pointsbox4{
     background-image: url(images/yinyang.jpeg);
@@ -122,6 +126,7 @@ border: solid;
     background-repeat: no-repeat;
     background-position: center;
     border: solid;
+    position: absolute;
 }
 .pointsbox5{
     background-image: url(images/egglogo.jpeg);
@@ -129,6 +134,7 @@ border: solid;
     background-repeat: no-repeat;
     background-position: center;
     border: solid;
+    position: absolute;
 }
 /* unvisited link */
 a:link {

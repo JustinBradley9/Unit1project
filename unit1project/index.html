@@ -47,7 +47,7 @@
             <h1>500 points</h1>
         </div>
         <div id="category1area">
-             <a href="#openModalc1r1"><div class="pointsbox pointsbox1"></div></a>
+             <a href="#openModalc1r1"><div class="pointsbox pointsbox1" id="c1r1"></div></a>
               <a href="#openModalc1r2"><div class="pointsbox pointsbox1"></div></a>
               <a href="#openModalc1r3"><div class="pointsbox pointsbox1"></div></a>
               <a href="#openModalc1r4"><div class="pointsbox pointsbox1"></div></a>
@@ -89,9 +89,9 @@
         <a href="#close">X</a>
         <h1>Sith or Jedi</h1>
         <form action="">
-            <input type="radio" name="answerc1r1" id="sith"> Sith <br>
-            <input type="radio" name="answerc1r1" id="jedi"> Jedi <br>
-            <input type="submit" value="Check answer" onclick="test()"> 
+            <input type="radio" name="answerc1r1" id="sith" onClick="saver(10,4)"> Sith <br>
+            <input type="radio" name="answerc1r1" id="jedi" onClick="saver(10,1)"> Jedi <br>
+            <input type="submit" value="Check answer" onClick="total()"> 
         </form>
     </div>
 </div>
