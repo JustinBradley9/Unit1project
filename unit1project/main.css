@@ -40,6 +40,7 @@ ul{
 }
 li{
     display: inline;
+    position: relative;
 }
 #pointsarea{
     grid-area: pointspace;

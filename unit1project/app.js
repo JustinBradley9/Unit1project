@@ -1,6 +1,41 @@
 console.log("Hello darkness my old friend")
 // alert("Player 1! Choose your name!")
 
+const allBoxes = document.querySelectorAll('.pointsbox')
+let boxId = undefined
+
+for (let i=0; i < allBoxes.length; i++) {
+    allBoxes[i].addEventListener('click', () => {
+        console.log(allBoxes[i].id)
+        boxId = allBoxes[i].id
+    })
+}
+
+const allModals = document.querySelectorAll('.modal')
+let modalId = undefined
+
+for (let e=0; e < allModals.length; e++) {
+    allModals[e].addEventListener('click', () => {
+        console.log(allModals[e].id)
+        modalId = allModals[e].id
+    })
+}
+
+let playermove = 1
+let playerturn;
+switch(playermove){
+case playermove % 2 == 0:
+    playerturn = document.getElementById("player2points")
+default:
+playerturn = document.getElementById("player1points")
+}
+// if (playermove % 2 == 0){
+//     playerturn = document.getElementById("player2points")
+// }
+// else{
+//     playerturn = document.getElementById("player1points")
+// }
+
 function basic() {
     var x = document.getElementById("textstuff").value;
     document.getElementById("player1name").innerHTML = x;
@@ -17,13 +52,6 @@ function basic2() {
     document.getElementById("nameem2").style.display = "none";
     alert( x + " ! Make The first move")
 }
-
-
-
-
-
-
-
 
 
 
@@ -55,7 +83,7 @@ housename[2] = "Gryffindor, A Lion care's not for a sheep's opinion and tries hi
 
 housename[3] = "Slytherin, Follow the snake's path. Whether you Rule or Or are Alone. You will stand at the Apex";
 
-housename[4] = "Either a Ravenlaw testing the test, A Gryffindor testing Authority, A Slytherin who doesn't wished to be tested, or a HufflePuff who made a mistake. Take a look at all the houses so that you may see which resonates most with you";
+housename[4] = "Either a Ravenclaw testing the test, A Gryffindor testing Authority, A Slytherin who doesn't wished to be tested, or a HufflePuff who made a mistake. Take a look at all the houses so that you may see which resonates most with you";
 }
  
 
@@ -66,36 +94,54 @@ if (score == 0){ housenamePtr = 0;}
 else if (score == 1) { housenamePtr = 1; }
   else if (score == 2) { housenamePtr = 2; }
     else if(score == 3)  { housenamePtr = 3; } 
-          else { housenamePtr = 4; }
+    else if(score == 4)  { housenamePtr = 4; } 
+          else { housenamePtr = 5; }
   myDisplay(housename[housenamePtr])
 }
 
-var  myDisplay = (housename) => {
+var myDisplay = (housename) => {
 //This function will open a new window and show the results calculated
 //issue and solution found. must be set exactly equal to in order to just revel parts i wish it to
-  if(housenamePtr===4){
-    alert(housename);
-    document.getElementById("openModalc1r1").style.display = "none"
-    document.getElementById("c1r1").style.display = "none"
-    let  x = parseFloat(document.getElementById("player1points").innerHTML)
-    document.getElementById("player1points").innerHTML = x + 100
+  if(housenamePtr===1){
+//    chooseid().style.display = "none"
+//    choosemodal().style.display = "none"
+   document.getElementById(boxId).style.display = "none"
+   document.getElementById(modalId).style.display = "none"
+     let x = parseFloat(playerturn.innerHTML)
+    playerturn.innerHTML = x + 100
+    console.log(playermove)
 
   }
   if(housenamePtr===0){
-    alert(housename);
-    document.getElementById("eagle2").style.display = "block"
-  }
-  if(housenamePtr===1){
-    alert(housename);
-    document.getElementById("badger2").style.display = "block"
+        alert("answer is incorrect");
+        document.getElementById(boxId).style.display = "none"
+        document.getElementById(modalId).style.display = "none"
+        playermove +=1
+      }
+  
+  if(housenamePtr===4){
+    document.getElementById(boxId).style.display = "none"
+    document.getElementById(modalId).style.display = "none"
+      let x = parseFloat(document.getElementById("player1points").innerHTML)
+     document.getElementById("player1points").innerHTML = x + 400
   }
   if(housenamePtr===2){
-    alert(housename);
-    document.getElementById("lion2").style.display = "block"
+    document.getElementById(boxId).style.display = "none"
+    document.getElementById(modalId).style.display = "none"
+      let x = parseFloat(document.getElementById("player1points").innerHTML)
+     document.getElementById("player1points").innerHTML = x + 200
   }
   if(housenamePtr===3){
-    alert(housename);
-    document.getElementById("snake2").style.display = "block"
+    document.getElementById(boxId).style.display = "none"
+    document.getElementById(modalId).style.display = "none"
+      let x = parseFloat(document.getElementById("player1points").innerHTML)
+     document.getElementById("player1points").innerHTML = x + 300
+  }
+  if(housenamePtr===5){
+    document.getElementById(boxId).style.display = "none"
+    document.getElementById(modalId).style.display = "none"
+      let x = parseFloat(document.getElementById("player1points").innerHTML)
+     document.getElementById("player1points").innerHTML = x + 500
   }
 }
 
