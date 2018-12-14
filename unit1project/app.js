@@ -18,7 +18,20 @@ function basic2() {
     alert( x + " ! Make The first move")
 }
 
-var Quest = new Array(2);  //this sets up an array for all of the answers that are given
+
+
+
+
+
+
+
+
+
+
+
+
+
+var Quest = new Array();  //this sets up an array for all of the answers that are given
 
 var getstartedfred =() => {
 // this function gives each of the answers 0 points so if someone doesn't answer a question
@@ -64,6 +77,9 @@ var  myDisplay = (housename) => {
     alert(housename);
     document.getElementById("openModalc1r1").style.display = "none"
     document.getElementById("c1r1").style.display = "none"
+    let  x = parseFloat(document.getElementById("player1points").innerHTML)
+    document.getElementById("player1points").innerHTML = x + 100
+
   }
   if(housenamePtr===0){
     alert(housename);
