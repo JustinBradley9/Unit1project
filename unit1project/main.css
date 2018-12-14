@@ -130,3 +130,56 @@ border: solid;
     background-position: center;
     border: solid;
 }
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: blue;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+.modal {
+    /*ensures modal stays centered*/
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background-color: black;
+    /*leave modal on top of all other objects*/
+	z-index: 99999;
+    opacity:0;
+    /*allows modal to be clicked on*/
+    pointer-events: none;
+    text-align: center;
+    overflow: scroll;
+}
+.modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal > div {
+    width: 350px;
+    height: 375px;
+    /*allows flexibility of modal*/
+    position: relative;
+    /*keeps modal centered*/
+	margin: 10% auto;
+	border-radius: 20%;
+    background-color: white;
+    overflow: scroll;
+    color: black;
+    
+}
