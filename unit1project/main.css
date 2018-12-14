@@ -1,0 +1,127 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "player1space questionspace"
+    "player2space questionspace";
+    width: 100vw;
+    height: 100vh;
+}
+
+#player1area{
+    grid-area: player1space;
+    border: solid;
+    text-align: center;
+}
+#player2area{
+    grid-area: player2space;
+    border: solid;
+    text-align: center;
+}
+#questionsarea{
+    grid-area: questionspace;
+    border: solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas: "titlespace titlespace titlespace titlespace titlespace titlespace"
+    "pointspace category1space category2space category3space category4space category5space"
+}
+#titlearea{
+    grid-area: titlespace;
+    border: dotted;
+    text-align: center;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10vw;
+}
+li{
+    display: inline;
+}
+#pointsarea{
+    grid-area: pointspace;
+    border: dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#pointsarea h1{
+ margin-left: 2vw;
+}
+
+#category1area{
+    grid-area: category1space;
+    border: dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#category2area{
+    grid-area: category2space;
+    border: dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#category3area{
+    grid-area: category3space;
+    border: dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#category4area{
+    grid-area: category4space;
+    border: dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#category5area{
+    grid-area: category5space;
+    border: dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.pointsbox{
+    font-size: 20px;
+    height: 10vh;
+    width: 10vw;
+    margin-left: 2vw;
+    border-radius: 20%;
+}
+
+.pointsbox1{
+background-image: url(images/starwarslogo.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.pointsbox2{
+    background-image: url(images/randomlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pointsbox3{
+    background-image: url(images/starwarslogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pointsbox4{
+    background-image: url(images/starwarslogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pointsbox5{
+    background-image: url(images/starwarslogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
