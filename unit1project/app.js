@@ -21,14 +21,7 @@ for (let e=0; e < allModals.length; e++) {
     })
 }
 
-let playermove = 1
-let playerturn;
-switch(playermove){
-case playermove % 2 == 0:
-    playerturn = document.getElementById("player2points")
-default:
-playerturn = document.getElementById("player1points")
-}
+
 // if (playermove % 2 == 0){
 //     playerturn = document.getElementById("player2points")
 // }
