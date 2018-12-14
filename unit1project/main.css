@@ -100,28 +100,33 @@ background-image: url(images/starwarslogo.png);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+border: solid;
 }
 .pointsbox2{
     background-image: url(images/randomlogo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: solid;
 }
 .pointsbox3{
-    background-image: url(images/starwarslogo.png);
-    background-size: cover;
+    background-image: url(images/fairylogo.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: solid;
 }
 .pointsbox4{
-    background-image: url(images/starwarslogo.png);
-    background-size: cover;
+    background-image: url(images/yinyang.jpeg);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: solid;
 }
 .pointsbox5{
-    background-image: url(images/starwarslogo.png);
-    background-size: cover;
+    background-image: url(images/egglogo.jpeg);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: solid;
 }
