@@ -95,3 +95,33 @@ li{
     border-radius: 20%;
 }
 
+.pointsbox1{
+background-image: url(images/starwarslogo.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.pointsbox2{
+    background-image: url(images/randomlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pointsbox3{
+    background-image: url(images/starwarslogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pointsbox4{
+    background-image: url(images/starwarslogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pointsbox5{
+    background-image: url(images/starwarslogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
