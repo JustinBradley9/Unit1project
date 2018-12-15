@@ -21,21 +21,26 @@ for (let e=0; e < allModals.length; e++) {
     })
 }
 
-
-// if (playermove % 2 == 0){
-//     playerturn = document.getElementById("player2points")
-// }
-// else{
-//     playerturn = document.getElementById("player1points")
-// }
+let playermove = 1
+let playerturn;
+if (playermove % 2 == 0){
+    playerturn = document.getElementById("player2points")
+}
+else{
+    playerturn = document.getElementById("player1points")
+}
 
 function basic() {
     var x = document.getElementById("textstuff").value;
-    document.getElementById("player1name").innerHTML = x;
-    document.getElementById("textstuff").style.display = "none";
-    document.getElementById("nameem1").style.display = "none";
-    alert("Player 2! Choose your name!")
-
+    if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("name", x)
+        document.getElementById("player1name").innerHTML = localStorage.getItem("name");
+        document.getElementById("textstuff").style.display = "none";
+        document.getElementById("nameem1").style.display = "none";
+        alert("Player 2! Choose your name!")
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
 }
 function basic2() {
     var x = document.getElementById("textstuff").value;
