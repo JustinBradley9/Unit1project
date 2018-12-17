@@ -142,7 +142,7 @@ var saver =(q, points) => {
 
 let playermove = 1
 let playerturn;
-if (playermove % 2 == 0){
+if (playermove % 1 == 0){
     playerturn = document.getElementById("player2points")
 }
 else{
