@@ -21,14 +21,6 @@ for (let e=0; e < allModals.length; e++) {
     })
 }
 
-let playermove = 1
-let playerturn;
-if (playermove % 2 == 0){
-    playerturn = document.getElementById("player2points")
-}
-else{
-    playerturn = document.getElementById("player1points")
-}
 
 function basic() {
     var x = document.getElementById("textstuff").value;
@@ -72,7 +64,7 @@ var total =() => {
   for (var i=0; i<1; i++) { score=score+Quest[i]; }
   analyzer(score);
 }
-housename = new Array();{
+pointswon = new Array();{
 
 }
  
@@ -80,21 +72,20 @@ housename = new Array();{
 
 var analyzer = (score) => {
 // this function uses the total calculated score to figure out which personality type they are
-if (score == 0){ housenamePtr = 0;}
-else if (score == 1) { housenamePtr = 1; }
-  else if (score == 2) { housenamePtr = 2; }
-    else if(score == 3)  { housenamePtr = 3; } 
-    else if(score == 4)  { housenamePtr = 4; } 
-    else if(score == 6)  { housenamePtr = 6; } 
-          else { housenamePtr = 5; }
-  myDisplay(housename[housenamePtr])
+if (score == 0){ pointswonPtr = 0;}
+else if (score == 1) { pointswonPtr = 1; }
+  else if (score == 2) { pointswonPtr = 2; }
+    else if(score == 3)  { pointswonPtr = 3; } 
+    else if(score == 4)  { pointswonPtr = 4; } 
+    else if(score == 6)  { pointswonPtr = 6; } 
+          else { pointswonPtr = 5; }
+  myDisplay(pointswon[pointswonPtr])
 }
 
-var myDisplay = (housename) => {
+var myDisplay = (pointswon) => {
 //This function will open a new window and show the results calculated
 //issue and solution found. must be set exactly equal to in order to just revel parts i wish it to
-  if(housenamePtr===1){
-
+  if(pointswonPtr===1){
    document.getElementById(boxId).style.display = "none"
    document.getElementById(modalId).style.display = "none"
      let x = parseFloat(playerturn.innerHTML)
@@ -102,38 +93,38 @@ var myDisplay = (housename) => {
     console.log(playermove)
 
   }
-  if(housenamePtr===0){
+  if(pointswonPtr===0){
         alert("answer is incorrect");
         document.getElementById(boxId).style.display = "none"
         document.getElementById(modalId).style.display = "none"
         playermove +=1
       }
   
-  if(housenamePtr===4){
+  if(pointswonPtr===4){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
       let x = parseFloat(document.getElementById("player1points").innerHTML)
      document.getElementById("player1points").innerHTML = x + 400
   }
-  if(housenamePtr===2){
+  if(pointswonPtr===2){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
       let x = parseFloat(document.getElementById("player1points").innerHTML)
      document.getElementById("player1points").innerHTML = x + 200
   }
-  if(housenamePtr===3){
+  if(pointswonPtr===3){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
       let x = parseFloat(document.getElementById("player1points").innerHTML)
      document.getElementById("player1points").innerHTML = x + 300
   }
-  if(housenamePtr===5){
+  if(pointswonPtr===5){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
       let x = parseFloat(document.getElementById("player1points").innerHTML)
      document.getElementById("player1points").innerHTML = x + 500
   }
-  if(housenamePtr===6){
+  if(pointswonPtr===6){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
       let x = parseFloat(document.getElementById("player1points").innerHTML)
@@ -145,4 +136,15 @@ var saver =(q, points) => {
 // this function puts the points that each answer is worth into the array
   q=q-q;
   Quest[q]=points
+}
+
+
+
+let playermove = 1
+let playerturn;
+if (playermove % 2 == 0){
+    playerturn = document.getElementById("player2points")
+}
+else{
+    playerturn = document.getElementById("player1points")
 }
