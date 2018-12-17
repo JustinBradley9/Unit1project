@@ -85,6 +85,7 @@ else if (score == 1) { housenamePtr = 1; }
   else if (score == 2) { housenamePtr = 2; }
     else if(score == 3)  { housenamePtr = 3; } 
     else if(score == 4)  { housenamePtr = 4; } 
+    else if(score == 6)  { housenamePtr = 6; } 
           else { housenamePtr = 5; }
   myDisplay(housename[housenamePtr])
 }
@@ -132,6 +133,12 @@ var myDisplay = (housename) => {
     document.getElementById(modalId).style.display = "none"
       let x = parseFloat(document.getElementById("player1points").innerHTML)
      document.getElementById("player1points").innerHTML = x + 500
+  }
+  if(housenamePtr===6){
+    document.getElementById(boxId).style.display = "none"
+    document.getElementById(modalId).style.display = "none"
+      let x = parseFloat(document.getElementById("player1points").innerHTML)
+     document.getElementById("player1points").innerHTML = x + 1000
   }
 }
 
