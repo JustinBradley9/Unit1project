@@ -44,6 +44,7 @@ function basic2() {
 }
 
 
+let playermove = 0
 
 
 
@@ -83,16 +84,7 @@ else if (score == 1) { pointswonPtr = 1; }
 }
 
 
-let playermove = 1
-let playerturn;
 
-if (playermove % 2 == 0){
-    playerturn = document.getElementById("player2points")
-}
-else{
-    playerturn = document.getElementById("player1points")
-
-}
 
 var myDisplay = (pointswon) => {
 //This function will open a new window and show the results calculated
@@ -100,6 +92,17 @@ var myDisplay = (pointswon) => {
   if(pointswonPtr===1){
    document.getElementById(boxId).style.display = "none"
    document.getElementById(modalId).style.display = "none"
+   
+   
+   let playerturn;
+
+    if (playermove == 1){
+    playerturn = document.getElementById("player2points")
+}
+    else{
+    playerturn = document.getElementById("player1points")
+
+}
      let x = parseFloat(playerturn.innerHTML)
     playerturn.innerHTML = x + 100
     console.log(playermove)
@@ -109,36 +112,85 @@ var myDisplay = (pointswon) => {
         alert("answer is incorrect");
         document.getElementById(boxId).style.display = "none"
         document.getElementById(modalId).style.display = "none"
-        playermove ++
+        if(playermove == 1)
+        playermove --
+        else{
+            playermove++
+        }
       }
   
   if(pointswonPtr===4){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
+    let playerturn;
+
+    if (playermove == 1){
+    playerturn = document.getElementById("player2points")
+}
+    else{
+    playerturn = document.getElementById("player1points")
+
+}
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 400
   }
   if(pointswonPtr===2){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
+    let playerturn;
+
+    if (playermove == 1){
+    playerturn = document.getElementById("player2points")
+}
+    else{
+    playerturn = document.getElementById("player1points")
+
+}
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 200
   }
   if(pointswonPtr===3){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
+    let playerturn;
+
+    if (playermove == 1){
+    playerturn = document.getElementById("player2points")
+}
+    else{
+    playerturn = document.getElementById("player1points")
+
+}
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 300
   }
   if(pointswonPtr===5){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
+    let playerturn;
+
+    if (playermove == 1){
+    playerturn = document.getElementById("player2points")
+}
+    else{
+    playerturn = document.getElementById("player1points")
+
+}
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 500
   }
   if(pointswonPtr===6){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
+    let playerturn;
+
+    if (playermove == 1){
+    playerturn = document.getElementById("player2points")
+}
+    else{
+    playerturn = document.getElementById("player1points")
+
+}
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 1000
   }
