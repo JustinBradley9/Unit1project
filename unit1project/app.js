@@ -82,6 +82,18 @@ else if (score == 1) { pointswonPtr = 1; }
   myDisplay(pointswon[pointswonPtr])
 }
 
+
+let playermove = 1
+let playerturn;
+
+if (playermove % 2 == 0){
+    playerturn = document.getElementById("player2points")
+}
+else{
+    playerturn = document.getElementById("player1points")
+
+}
+
 var myDisplay = (pointswon) => {
 //This function will open a new window and show the results calculated
 //issue and solution found. must be set exactly equal to in order to just revel parts i wish it to
@@ -97,38 +109,38 @@ var myDisplay = (pointswon) => {
         alert("answer is incorrect");
         document.getElementById(boxId).style.display = "none"
         document.getElementById(modalId).style.display = "none"
-        playermove +=1
+        playermove ++
       }
   
   if(pointswonPtr===4){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
-      let x = parseFloat(document.getElementById("player1points").innerHTML)
-     document.getElementById("player1points").innerHTML = x + 400
+      let x = parseFloat(playerturn.innerHTML)
+     playerturn.innerHTML = x + 400
   }
   if(pointswonPtr===2){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
-      let x = parseFloat(document.getElementById("player1points").innerHTML)
-     document.getElementById("player1points").innerHTML = x + 200
+      let x = parseFloat(playerturn.innerHTML)
+     playerturn.innerHTML = x + 200
   }
   if(pointswonPtr===3){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
-      let x = parseFloat(document.getElementById("player1points").innerHTML)
-     document.getElementById("player1points").innerHTML = x + 300
+      let x = parseFloat(playerturn.innerHTML)
+     playerturn.innerHTML = x + 300
   }
   if(pointswonPtr===5){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
-      let x = parseFloat(document.getElementById("player1points").innerHTML)
-     document.getElementById("player1points").innerHTML = x + 500
+      let x = parseFloat(playerturn.innerHTML)
+     playerturn.innerHTML = x + 500
   }
   if(pointswonPtr===6){
     document.getElementById(boxId).style.display = "none"
     document.getElementById(modalId).style.display = "none"
-      let x = parseFloat(document.getElementById("player1points").innerHTML)
-     document.getElementById("player1points").innerHTML = x + 1000
+      let x = parseFloat(playerturn.innerHTML)
+     playerturn.innerHTML = x + 1000
   }
 }
 
@@ -140,11 +152,3 @@ var saver =(q, points) => {
 
 
 
-let playermove = 1
-let playerturn;
-if (playermove % 1 == 0){
-    playerturn = document.getElementById("player2points")
-}
-else{
-    playerturn = document.getElementById("player1points")
-}
