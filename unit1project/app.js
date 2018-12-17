@@ -94,8 +94,7 @@ var myDisplay = (housename) => {
 //This function will open a new window and show the results calculated
 //issue and solution found. must be set exactly equal to in order to just revel parts i wish it to
   if(housenamePtr===1){
-//    chooseid().style.display = "none"
-//    choosemodal().style.display = "none"
+
    document.getElementById(boxId).style.display = "none"
    document.getElementById(modalId).style.display = "none"
      let x = parseFloat(playerturn.innerHTML)
