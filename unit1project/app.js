@@ -73,15 +73,7 @@ var total =() => {
   analyzer(score);
 }
 housename = new Array();{
-housename[0] = "Ravenclaw, You seek knowledge and hope to find the answers to all your questions. Whether for yourself or to assist others";
 
-housename[1] = "HufflePuff, Cute and Fluffy to most, but those that wrong you know a Badger's rage is worse than a Lion or Snake "; 
-
-housename[2] = "Gryffindor, A Lion care's not for a sheep's opinion and tries his hardest with every hunt. And you are a Lion";
-
-housename[3] = "Slytherin, Follow the snake's path. Whether you Rule or Or are Alone. You will stand at the Apex";
-
-housename[4] = "Either a Ravenclaw testing the test, A Gryffindor testing Authority, A Slytherin who doesn't wished to be tested, or a HufflePuff who made a mistake. Take a look at all the houses so that you may see which resonates most with you";
 }
  
 
