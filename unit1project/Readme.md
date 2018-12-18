@@ -10,4 +10,4 @@ real life facts
 [Link to website of Netlify](https://vigorous-blackwell-0d4f6a.netlify.com)
 ## Trello Board and Wire Frame
 [Link to Trello board and Wireframe](https://trello.com/b/LXhZ3IKX/unit-1-project-s)
-(https://github.com/JustinBradley9/Unit1project/blob/master/unit1project/images/WireFrame.jpg)
+[WireFrame](https://github.com/JustinBradley9/Unit1project/blob/master/unit1project/images/WireFrame.jpg)
