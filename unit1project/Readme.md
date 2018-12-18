@@ -7,7 +7,7 @@ real life facts
 - Turns are switched whenever a player answers a question incorrectly
 - Inspired to do this Game because I enjoyed the endless possibilities of it
 # Website can be found here
-[Link to website of Netlify](https://vigorous-blackwell-0d4f6a.netlify.com)
+[Link to website of Netlify](https://practical-jennings-53fb3f.netlify.com)
 ## Features
 - Players input names
 - reset game button
