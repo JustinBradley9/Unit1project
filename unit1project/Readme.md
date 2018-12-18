@@ -8,6 +8,7 @@ real life facts
 - Inspired to do this Game because I enjoyed the endless possibilities of it
 # Website can be found here
 [Link to website of Netlify](https://vigorous-blackwell-0d4f6a.netlify.com)
-## Trello Board and Wire Frame
+## Trello Board
 [Link to Trello board and Wireframe](https://trello.com/b/LXhZ3IKX/unit-1-project-s)
+## Wireframe
 [WireFrame](https://github.com/JustinBradley9/Unit1project/blob/master/unit1project/images/WireFrame.jpg)
