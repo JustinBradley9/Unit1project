@@ -109,7 +109,7 @@ var myDisplay = (pointswon) => {
 
   }
   if(pointswonPtr===0){
-        alert("answer is incorrect");
+        alert("answer is incorrect. Players Switch Turns");
         document.getElementById(boxId).style.display = "none"
         document.getElementById(modalId).style.display = "none"
         if(playermove == 1)
