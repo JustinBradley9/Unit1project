@@ -1,5 +1,5 @@
 console.log("Hello darkness my old friend")
-alert("Player 1! Choose your name!")
+// alert("Player 1! Choose your name!")
 
 const allBoxes = document.querySelectorAll('.pointsbox')
 let boxId = undefined
@@ -106,6 +106,12 @@ var myDisplay = (pointswon) => {
      let x = parseFloat(playerturn.innerHTML)
     playerturn.innerHTML = x + 100
     console.log(playermove)
+    if (parseFloat(document.getElementById("player1points").innerHTML) > 2000){
+        alert("Player 1 has won")
+    }
+    if(parseFloat(document.getElementById("player2points").innerHTML) > 2000){
+        alert("Player 2 has won")
+    }
 
   }
   if(pointswonPtr===0){
@@ -133,6 +139,12 @@ var myDisplay = (pointswon) => {
 }
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 400
+     if (parseFloat(document.getElementById("player1points").innerHTML) > 2000){
+        alert("Player 1 has won")
+    }
+    if(parseFloat(document.getElementById("player2points").innerHTML) > 2000){
+        alert("Player 2 has won")
+    }
   }
   if(pointswonPtr===2){
     document.getElementById(boxId).style.display = "none"
@@ -148,6 +160,12 @@ var myDisplay = (pointswon) => {
 }
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 200
+     if (parseFloat(document.getElementById("player1points").innerHTML) > 2000){
+        alert("Player 1 has won")
+    }
+    if(parseFloat(document.getElementById("player2points").innerHTML) > 2000){
+        alert("Player 2 has won")
+    }
   }
   if(pointswonPtr===3){
     document.getElementById(boxId).style.display = "none"
@@ -163,6 +181,12 @@ var myDisplay = (pointswon) => {
 }
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 300
+     if (parseFloat(document.getElementById("player1points").innerHTML) > 2000){
+        alert("Player 1 has won")
+    }
+    if(parseFloat(document.getElementById("player2points").innerHTML) > 2000){
+        alert("Player 2 has won")
+    }
   }
   if(pointswonPtr===5){
     document.getElementById(boxId).style.display = "none"
@@ -178,6 +202,12 @@ var myDisplay = (pointswon) => {
 }
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 500
+     if (parseFloat(document.getElementById("player1points").innerHTML) > 2000){
+        alert("Player 1 has won")
+    }
+    if(parseFloat(document.getElementById("player2points").innerHTML) > 2000){
+        alert("Player 2 has won")
+    }
   }
   if(pointswonPtr===6){
     document.getElementById(boxId).style.display = "none"
@@ -193,6 +223,12 @@ var myDisplay = (pointswon) => {
 }
       let x = parseFloat(playerturn.innerHTML)
      playerturn.innerHTML = x + 1000
+     if (parseFloat(document.getElementById("player1points").innerHTML) > 2000){
+        alert("Player 1 has won")
+    }
+    if(parseFloat(document.getElementById("player2points").innerHTML) > 2000){
+        alert("Player 2 has won")
+    }
   }
 }
 
@@ -202,5 +238,9 @@ var saver =(q, points) => {
   Quest[q]=points
 }
 
-
-
+if (parseFloat(document.getElementById("player1points").innerHTML) > 2000){
+    alert("Player 1 has won")
+}
+if(parseFloat(document.getElementById("player2points").innerHTML) > 2000){
+    alert("Player 2 has won")
+}

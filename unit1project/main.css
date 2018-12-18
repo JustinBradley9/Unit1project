@@ -112,6 +112,7 @@ position: absolute;
     background-position: center;
     border: solid;
     position: absolute;
+
 }
 .pointsbox3{
     background-image: url(images/fairylogo.jpg);
@@ -190,3 +191,33 @@ a:link {
     color: black;
     
 }
+#pic1{
+ border:solid;
+ height: 100px;
+ width: 100px;
+ visibility: hidden;
+}
+#pic2{
+    border:solid;
+    height: 100px;
+    width: 100px;
+    visibility: hidden;
+   }
+   #pic3{
+    border:solid;
+    height: 100px;
+    width: 100px;
+    visibility: hidden;
+   }
+   #pic4{
+    border:solid;
+    height: 100px;
+    width: 100px;
+    visibility: hidden;
+   }
+   #pic5{
+    border:solid;
+    height: 100px;
+    width: 100px;
+    visibility: hidden;
+   }
