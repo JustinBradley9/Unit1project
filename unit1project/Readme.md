@@ -1,6 +1,6 @@
 # Jeopardy Game By Justin Bradley
 Jeopardy game based on random information and facts from various pieces of media and fiction as well as
-rel life facts
+real life facts
 # User Stories
 - Made a 25 question Jeopardy game used for 2 players
 - Each player enters their names and player one goes first
@@ -8,3 +8,4 @@ rel life facts
 - Inspired to do this Game because I enjoyed the endless possibilities of it
 # Website can be found here
 [Link to website of Netlify](https://vigorous-blackwell-0d4f6a.netlify.com)
+[Link to Trello board and Wireframe](https://trello.com/b/LXhZ3IKX/unit-1-project-s)
