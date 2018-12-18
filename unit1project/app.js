@@ -1,5 +1,5 @@
 console.log("Hello darkness my old friend")
-// alert("Player 1! Choose your name!")
+alert("Player 1! Choose your name!")
 
 const allBoxes = document.querySelectorAll('.pointsbox')
 let boxId = undefined
@@ -40,7 +40,7 @@ function basic2() {
     document.getElementById("player2name").innerHTML = y;
     document.getElementById("textstuff2").style.display = "none";
     document.getElementById("nameem2").style.display = "none";
-    alert( x + " ! Make The first move")
+    alert( x + " ! Make The first move. PLayers are to click on image and and then answer question that come up. When a question is answered incorrectly players will switch turns.")
 }
 
 
