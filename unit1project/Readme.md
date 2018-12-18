@@ -6,3 +6,5 @@ rel life facts
 - Each player enters their names and player one goes first
 - Turns are switched whenever a player answers a question incorrectly
 - Inspired to do this Game because I enjoyed the endless possibilities of it
+# Website can be found here
+[a link](https://vigorous-blackwell-0d4f6a.netlify.com)
