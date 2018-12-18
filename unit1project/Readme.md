@@ -8,6 +8,11 @@ real life facts
 - Inspired to do this Game because I enjoyed the endless possibilities of it
 # Website can be found here
 [Link to website of Netlify](https://vigorous-blackwell-0d4f6a.netlify.com)
+## Features
+- Players input names
+- reset game button
+- 2 player game so switches turns
+- ScoreBoard
 ## Trello Board
 [Link to Trello board and Wireframe](https://trello.com/b/LXhZ3IKX/unit-1-project-s)
 ## Wireframe
